@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { AnimatedWrapper } from '@/components/animated-wrapper';
 import { NetworkAnimation } from '@/components/network-animation';
