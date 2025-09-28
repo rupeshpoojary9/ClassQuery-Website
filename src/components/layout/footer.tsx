@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { BookOpenCheck, Twitter, Linkedin, Facebook } from 'lucide-react';
+import Image from 'next/image';
+import Logo from '@/assets/logo.png';
+
 
 const Footer = () => {
   const footerLinks = [
@@ -21,7 +24,13 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex flex-col items-center gap-4 md:items-start">
             <Link href="/" className="flex items-center gap-2">
-              <BookOpenCheck className="h-7 w-7 text-primary" />
+            <Image
+                src={Logo}  
+                alt="ClassQuery Logo"
+                width={64}
+                height={64}
+                className="h-10 w-10"
+              />
               <span className="text-xl font-bold tracking-tight text-foreground">
                 ClassQuery
               </span>
