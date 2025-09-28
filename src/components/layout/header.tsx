@@ -6,6 +6,9 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { BookOpenCheck } from 'lucide-react';
 import { RequestDemoModal } from '@/components/request-demo-modal';
+import Image from 'next/image';
+import Logo from '@/assets/logo.png';
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +41,13 @@ const Header = () => {
       >
         <div className="container mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center gap-2">
-            <BookOpenCheck className="h-7 w-7 text-primary" />
+          <Image
+            src={Logo}  
+            alt="ClassQuery Logo"
+            width={64}
+            height={64}
+            className="h-10 w-10"
+          />
             <span className="text-xl font-bold tracking-tight text-foreground">
               ClassQuery
             </span>
